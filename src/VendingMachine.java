@@ -37,7 +37,7 @@ public class VendingMachine {
             }
             promotion = new Promotion(currDate, WINRATE2); // reset new Promotion with winrate = 0.5
         }
-        System.out.println("Remain: " + promotion.getRemainingBudget());
+        // System.out.println("Remain: " + promotion.getRemainingBudget());
     }
 
     public boolean isPromotionApplied() { // check if the transaction is eligible for the promotion
@@ -99,7 +99,7 @@ public class VendingMachine {
             System.out.println("[ERR]\tYou haven't put any money to the machine!");
         }
         else {
-            System.out.println("[OK]\tCancel successfully! Here is your " + balance);
+            System.out.println("[OK]\tCancel successfully! Here is your " + balance + " VND");
             reset();
         }
     }
@@ -176,7 +176,7 @@ public class VendingMachine {
                             System.out.println("[ERR]\tPlease enter a valid note or enter B for back to menu!");
                             
                         } catch (Exception e) {
-                            System.out.println("[ERR]\tPlease enter a valid note  or enter B for back to menu!");
+                            System.out.println("[ERR]\tPlease enter a valid note or enter B for back to menu!");
                             sc.nextLine();
                         }
                     } while (true);
