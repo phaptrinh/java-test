@@ -8,6 +8,8 @@
 
 **Total cost:** Sum of selected products's price.
 
+**Your change:** Change of the transaction.
+
 **Your cart:** Display all products which user have selected.
 
 **Your promotion:** Display information whether this transaction is eligible for promotion. If user selects a product with quantity greater than or equal to 3, promotion is applied.
